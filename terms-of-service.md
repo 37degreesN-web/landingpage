@@ -3,6 +3,8 @@
 **Protocols from 37°N**
 **Last updated:** April 9, 2026
 
+*Using the Health Data app? If you use our on-device mobile application **Health Data by 37°N** (for iPhone or Android), see [Section 18 (Health Data by 37°N)](#18-health-data-by-37n) below for terms specific to the app, including that no account or subscription is required, and health data stays on your device.*
+
 Welcome to Protocols from 37°N. These Terms of Service ("Terms") govern your access to and use of the Protocols from 37°N website, application, and related services (collectively, the "Service"). Please read them carefully. By creating an account or using the Service, you agree to these Terms.
 
 ## 1. Who We Are
@@ -98,6 +100,16 @@ We may update these Terms from time to time. If we make material changes, we wil
 
 These Terms are governed by the laws of the jurisdiction in which Protocols from 37°N is established, without regard to its conflict-of-laws principles. Any disputes will be resolved in the courts of that jurisdiction, unless local consumer protection laws give you the right to bring a claim in your home jurisdiction.
 
-## 18. Contact
+## 18. Health Data by 37°N
 
-If you have any questions about these Terms, please reach out at **support@37degreesn.com**.
+If you use our mobile application **Health Data by 37°N** (available for iPhone and Android), the following terms apply specifically to your use of that application:
+
+- **Free and No Account Required:** Health Data by 37°N is free to use. You are not required to create an account, register, or provide an email address. Sections 3 (Your Account), 11 (Fees and Subscriptions), and account-related termination provisions in Section 12 do not apply to Health Data by 37°N.
+- **On-Device Architecture:** Health Data operates locally on your device. 37°N does not host, store, or process your health records on servers, and Section 6 (Your Content) does not apply to health records accessed on your phone. You control the export and destination of any CSV files you generate.
+- **Read-Only Access:** Health Data reads records from Apple Health or Health Connect only with your explicit permission and never writes, modifies, or deletes records in your health repository.
+- **Applicability of Core Terms:** All other applicable terms—including Section 2 (Eligibility), Section 5 (Not Medical Advice), Section 7 (Acceptable Use), Section 10 (Intellectual Property), Section 13 (Disclaimers), Section 14 (Limitation of Liability), Section 15 (Indemnification), and Section 17 (Governing Law)—apply fully to your use of Health Data by 37°N.
+- **Privacy Policy:** The handling of data by Health Data by 37°N is governed exclusively by our dedicated [Health Data Privacy Policy](health-data-privacy.md).
+
+## 19. Contact
+
+If you have any questions about these Terms, please reach out at **support@37degreesn.com** or **pranam@37degreesn.com**.

@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request Account Deletion — 37°N Labs</title>
+  <meta name="description" content="Request the deletion of your 37°N account and associated data for NOD, Squad Hub, and Protocol Explorer." />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="assets/colors_and_type.css" rel="stylesheet" />
+  <link href="site.css" rel="stylesheet" />
+  <style>
+    .legal-hero {
+      padding: 48px 0 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .legal-hero h1 {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: clamp(32px, 5vw, 52px);
+      line-height: 1.1;
+      letter-spacing: -0.03em;
+      margin: 0 0 12px;
+      color: var(--ink);
+    }
+
+    .legal-meta {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: var(--mute);
+      padding-bottom: 48px;
+    }
+
+    .legal-body {
+      max-width: 720px;
+      padding: 64px 0 120px;
+    }
+
+    .legal-body h2 {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: clamp(20px, 2.5vw, 26px);
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin: 48px 0 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+
+    .legal-body h2:first-of-type {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+
+    .legal-body p {
+      font-family: var(--font-sans);
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--sub);
+      margin: 0 0 16px;
+    }
+
+    .legal-body ul {
+      margin: 0 0 16px 20px;
+      padding: 0;
+    }
+
+    .legal-body li {
+      font-family: var(--font-sans);
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--sub);
+      margin-bottom: 6px;
+    }
+
+    .legal-body strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .legal-body a {
+      color: var(--sage);
+      transition: color 0.15s;
+    }
+
+    .legal-body a:hover {
+      color: var(--ink);
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: var(--sage);
+      margin-bottom: 32px;
+      transition: color 0.15s;
+    }
+
+    .back-link:hover {
+      color: var(--ink);
+    }
+
+    .deletion-card {
+      background: var(--surface-solid);
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      padding: 28px 24px;
+      margin: 32px 0;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-family: var(--font-sans);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 12px 14px;
+      border: 1px solid var(--line-strong);
+      border-radius: var(--r);
+      font-family: var(--font-sans);
+      font-size: 15px;
+      background: #FFFFFF;
+      color: var(--ink);
+      box-sizing: border-box;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      border-color: var(--sage);
+    }
+
+    .form-help {
+      font-size: 12px;
+      color: var(--mute);
+      margin-top: 6px;
+      line-height: 1.4;
+    }
+
+    .callout-box {
+      background: rgba(94, 108, 88, 0.08);
+      border-left: 3px solid var(--sage);
+      padding: 16px 20px;
+      border-radius: var(--r);
+      margin: 24px 0;
+    }
+
+    .callout-box p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--sub);
+    }
+
+    #confirmation-message {
+      display: none;
+      background: #FFFFFF;
+      border: 1px solid var(--sage);
+      padding: 20px;
+      border-radius: var(--r);
+      margin-top: 20px;
+    }
+
+    #confirmation-message h3 {
+      font-family: var(--font-display);
+      font-size: 18px;
+      margin: 0 0 8px;
+      color: var(--ink);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ═══ NAV ═══ -->
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a href="index.html" class="brand">37<span style="color: var(--warning)">&deg;</span>N&nbsp;Labs</a>
+      <div class="nav-links">
+        <a href="index.html#mission" class="mono nav-link-text">Mission</a>
+        <a href="index.html#science" class="mono nav-link-text">The Science</a>
+        <a href="index.html#team" class="mono nav-link-text">Team</a>
+        <a href="index.html#experiments" class="mono nav-link-text">Experiments</a>
+        <a href="index.html#join" class="btn btn-ink btn-sm">Join early access</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO ═══ -->
+  <header class="legal-hero">
+    <div class="wrap">
+      <a href="privacy-policy.html" class="back-link">&larr; Back to Privacy Policy</a>
+      <h1>Request Account &amp; Data Deletion</h1>
+      <div class="legal-meta">37°N Account Services &mdash; Last updated: October 14, 2026</div>
+    </div>
+  </header>
+
+  <!-- ═══ MAIN BODY ═══ -->
+  <main class="legal-body">
+    <div class="wrap">
+      <p>This page allows users of 37°N connected apps &mdash; including <strong>NOD (Nightly Open Data)</strong>, <strong>Squad Hub</strong>, and <strong>Protocol Explorer</strong> &mdash; to request permanent deletion of their 37°N account and all associated cloud data in accordance with Google Play and Apple App Store data privacy requirements.</p>
+
+      <div class="callout-box">
+        <p><strong>Using Health Data by 37°N?</strong> Health Data operates entirely on your phone with no account, sign-in, or cloud servers. To delete all data from Health Data, navigate in the app to <strong>Local journal &rarr; Clear local journal</strong> or simply uninstall the app from your device.</p>
+      </div>
+
+      <h2>What Will Be Deleted</h2>
+      <p>When you request account deletion, we permanently wipe:</p>
+      <ul>
+        <li><strong>Profile &amp; Authentication:</strong> Your Firebase Authentication record, registered email, login credentials, display name, demographic details (age, sex at birth, racial background), weight units, and health goals.</li>
+        <li><strong>Squad Data:</strong> Your squad memberships, roles (captain or member), invite history, and check-in statuses.</li>
+        <li><strong>Encrypted Health Records:</strong> All encrypted sleep records, vitals, daily check-ins, custom experiment logs, and key backups stored in cloud storage.</li>
+        <li><strong>Notifications:</strong> Device push tokens (Firebase Cloud Messaging) registered to your account.</li>
+        <li><strong>Feedback &amp; Support History:</strong> Any support inquiries or feedback tied to your account ID.</li>
+      </ul>
+
+      <h2>Deletion Timeframe</h2>
+      <p>Account deletion requests are processed within <strong>30 calendar days</strong>. Once deleted, your account and encrypted records cannot be restored. Anonymized, aggregated system metrics that cannot be linked back to you may be retained for security and operational monitoring.</p>
+
+      <h2>Submit a Deletion Request</h2>
+      <div class="deletion-card">
+        <form id="deletion-form" onsubmit="handleDeletionSubmit(event)">
+          <div class="form-group">
+            <label for="delete-email">Account Email Address *</label>
+            <input type="email" id="delete-email" name="email" required placeholder="name@example.com" />
+            <div class="form-help">Enter the email address associated with your 37°N account (or the Google account used to sign in).</div>
+          </div>
+
+          <div class="form-group">
+            <label for="delete-app">Primary App Used</label>
+            <select id="delete-app" name="app">
+              <option value="All 37°N Apps (NOD, Squad Hub, Protocol Explorer)">All 37°N Apps &amp; Shared Account</option>
+              <option value="NOD (Nightly Open Data)">NOD (Nightly Open Data)</option>
+              <option value="Squad Hub">Squad Hub</option>
+              <option value="Protocol Explorer">Protocol Explorer</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="delete-notes">Additional Instructions (Optional)</label>
+            <input type="text" id="delete-notes" name="notes" placeholder="e.g., Specific squads to leave, or immediate confirmation requested" />
+          </div>
+
+          <button type="submit" class="btn btn-ink" id="submit-btn">Send Deletion Request</button>
+        </form>
+
+        <div id="confirmation-message">
+          <h3>Request Prepared</h3>
+          <p>We are opening your default email client to send this deletion request directly to our privacy team. If your email app does not open automatically, please send an email directly to:</p>
+          <p><a id="direct-mailto" href="mailto:privacy@37degreesn.com?subject=Account%20and%20Data%20Deletion%20Request"><strong>privacy@37degreesn.com</strong></a></p>
+          <p class="form-help">Subject: <code>Account and Data Deletion Request</code><br />Please include your registered account email so we can verify and execute your request within 30 days.</p>
+        </div>
+      </div>
+
+      <h2>Direct Contact</h2>
+      <p>You may also email us directly at any time to request deletion or ask questions:</p>
+      <p>
+        <strong>37°N Privacy Team</strong><br />
+        Email: <a href="mailto:privacy@37degreesn.com?subject=Account%20and%20Data%20Deletion%20Request">privacy@37degreesn.com</a><br />
+        App Support: <a href="mailto:support@37degreesn.com">support@37degreesn.com</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="brand">37<span style="color: var(--warning)">&deg;</span>N&nbsp;Labs</div>
+          <div class="footer-tag">End generic health</div>
+          <div class="footer-legal">
+            <a href="terms-of-service.html">Terms of Service</a>
+            <span class="footer-legal-sep">·</span>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <span class="footer-legal-sep">·</span>
+            <a href="health-data-privacy.html">Health Data Privacy</a>
+            <span class="footer-legal-sep">·</span>
+            <a href="delete-account.html">Delete Account</a>
+          </div>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <span class="mono">Connect</span>
+            <a href="index.html#join">Early access</a>
+            <a href="mailto:pree@37degreesN.com">Investors</a>
+            <a href="https://www.linkedin.com/company/37degreesn/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span class="mono">&copy; 2026 37&deg; North &mdash; home of the unconventional</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function handleDeletionSubmit(event) {
+      event.preventDefault();
+      var email = document.getElementById('delete-email').value.trim();
+      var app = document.getElementById('delete-app').value;
+      var notes = document.getElementById('delete-notes').value.trim();
+
+      var subject = encodeURIComponent("Account and Data Deletion Request - " + email);
+      var bodyText = "Hello 37°N Privacy Team,\n\n" +
+        "I request the permanent deletion of my 37°N account and all associated personal data.\n\n" +
+        "Registered Account Email: " + email + "\n" +
+        "App(s): " + app + "\n";
+      if (notes) {
+        bodyText += "Notes: " + notes + "\n";
+      }
+      bodyText += "\nPlease confirm when my account and data have been permanently removed.\n\nThank you.";
+
+      var mailtoUrl = "mailto:privacy@37degreesn.com?subject=" + subject + "&body=" + encodeURIComponent(bodyText);
+
+      document.getElementById('confirmation-message').style.display = 'block';
+      document.getElementById('direct-mailto').href = mailtoUrl;
+
+      // Attempt opening mail client
+      window.location.href = mailtoUrl;
+    }
+  </script>
+
+</body>
+
+</html>
