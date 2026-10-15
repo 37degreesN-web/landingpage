@@ -161,7 +161,7 @@
     <div class="wrap">
       <a href="privacy-policy.html" class="back-link">&larr; Back to Protocols Privacy Policy</a>
       <h1>Health Data by 37°N</h1>
-      <div class="legal-meta">Privacy Policy &mdash; Last updated: October 14, 2026</div>
+      <div class="legal-meta">Privacy Policy &mdash; Last updated: October 15, 2026</div>
     </div>
   </header>
 
@@ -175,7 +175,7 @@
       <p>This Privacy Policy explains how <strong>Health Data by 37°N</strong> (&ldquo;the app,&rdquo; &ldquo;we,&rdquo; or &ldquo;our&rdquo;) accesses and handles data on your device. We believe your personal health records belong exclusively to you. Health Data is built from the ground up as a private, on-device utility.</p>
 
       <h2>1. What the App Does</h2>
-      <p>Health Data by 37°N is a free mobile application for iPhone and Android. It reads health records stored locally in Apple Health (on iPhone) or Health Connect (on Android), lets you view which apps and devices supplied those records, inspect timestamps and counts, and optionally export loaded records as a comma-separated values (CSV) file.</p>
+      <p>Health Data by 37°N is a free mobile application for iPhone and Android. It reads health records stored locally in Apple Health (on iPhone) or Health Connect (on Android), lets you view which apps and devices supplied those records, inspect timestamps and counts, and optionally export loaded records as a comma-separated values (CSV) file. The app reads health records only while it is open; it does not run in the background.</p>
 
       <h2>2. Read-Only Access &amp; Health Categories</h2>
       <p>Health Data is strictly <strong>read-only</strong>. It never writes, modifies, or deletes health records in Apple Health or Health Connect.</p>
@@ -200,35 +200,20 @@
       </ul>
 
       <h2>4. Records Stay on Your Phone</h2>
-      <p>Health records read from Apple Health or Health Connect are held in transient device memory while the app is open. The app does not save raw health records or measurement values to persistent local disk storage.</p>
-      <p>To provide monitoring and history features, the app stores only minimal operational metadata locally on your phone:</p>
-      <ul>
-        <li><strong>Local check history (journal):</strong> A rolling log of up to 2,000 read events over the preceding 7 days. Entries record only the check timestamp, the source app name, device name, and record count. The journal holds <strong>no measurement values and no notes</strong>.</li>
-        <li><strong>Record index:</strong> A bounded local index of record IDs (cryptographic fingerprints) used solely to recognise new records across read cycles.</li>
-        <li><strong>Local preferences:</strong> Simple settings such as pinned metrics, whether background monitoring is enabled, and whether permissions were granted.</li>
-      </ul>
-      <p>All local journal files and settings are stored in application-private storage and are explicitly <strong>excluded from operating system backups</strong> (such as iCloud Backup or Android backup). You can permanently clear the local check history and discovery index at any time inside the app by navigating to <strong>Local journal &rarr; Clear local journal</strong>, or remove all stored data by deleting the app from your device.</p>
+      <p>Health records are held in memory only while the app is open. The app saves no health records, measurements or history of checks. It keeps one small setting on your phone: which data types you pinned, and whether you connected health data. This setting is excluded from phone backups and is removed when you delete the app.</p>
 
-      <h2>5. Background Monitoring</h2>
-      <p>Background monitoring is entirely <strong>optional and disabled by default</strong>. If you choose to enable it, the app periodically checks for newly arrived records in the background:</p>
-      <ul>
-        <li>On Android, the app requests periodic checks approximately every 15 minutes via system job scheduling.</li>
-        <li>On iPhone, the app relies on Apple Health&rsquo;s native background update mechanisms.</li>
-      </ul>
-      <p>All check results and logs remain strictly on your phone. You can disable background monitoring at any time within the app&rsquo;s settings.</p>
-
-      <h2>6. CSV Export Under Your Control</h2>
+      <h2>5. CSV Export Under Your Control</h2>
       <p>The app exports records only when you explicitly tap <strong>Export records</strong>. The app generates a CSV file of the loaded snapshot on your device and opens your operating system&rsquo;s standard file picker. You choose where to send or save the file &mdash; such as the local Files app, an email, or another application. Once saved or shared, you and your selected destination control that file. On iPhone, any temporary export cache file is removed as soon as the file picker completes.</p>
 
-      <h2>7. Feedback and Support Correspondence</h2>
+      <h2>6. Feedback and Support Correspondence</h2>
       <p>Health Data includes an optional feedback and support option:</p>
       <ul>
-        <li>Tapping feedback launches your phone&rsquo;s default email client, addressing an email to <strong>pranam@37degreesn.com</strong> with only the message text you wrote. No data is transmitted automatically by the app.</li>
+        <li>Tapping feedback launches your phone&rsquo;s default email client, addressing an email to <strong>feedback+healthdata@37degreesn.com</strong> with only the message text you wrote. No data is transmitted automatically by the app.</li>
         <li>Generating a diagnostic support report is entirely optional. If created, you can review its text yourself and manually choose whether to copy and include it in your email. It never includes raw health measurement values.</li>
       </ul>
-      <p><strong>Support email retention and deletion:</strong> If you contact us by email, we use your message and email address solely to troubleshoot reported issues and assist you. We do not use support correspondence for marketing or share it with third parties. Support emails are retained only for as long as necessary to address your inquiry (up to a maximum of 12 months for record-keeping), after which they are deleted. You may request immediate deletion of your support correspondence at any time by sending an email to <a href="mailto:pranam@37degreesn.com?subject=Support%20Data%20Deletion">pranam@37degreesn.com</a> with the subject line &ldquo;Support Data Deletion.&rdquo;</p>
+      <p><strong>Support email retention and deletion:</strong> If you contact us by email, we use your message and email address solely to troubleshoot reported issues and assist you. We do not use support correspondence for marketing or share it with third parties. Support emails are retained only for as long as necessary to address your inquiry (up to a maximum of 12 months for record-keeping), after which they are deleted. You may request immediate deletion of your support correspondence at any time by sending an email to <a href="mailto:feedback+healthdata@37degreesn.com?subject=Support%20Data%20Deletion">feedback+healthdata@37degreesn.com</a> with the subject line &ldquo;Support Data Deletion.&rdquo;</p>
 
-      <h2>8. Prohibition of Secondary Uses</h2>
+      <h2>7. Prohibition of Secondary Uses</h2>
       <p>In accordance with Apple HealthKit guidelines and Google Health Connect policies:</p>
       <ul>
         <li>We do not sell, rent, or monetize health data.</li>
@@ -238,24 +223,25 @@
         <li>Health records accessed by the app are not stored in iCloud or any cloud repository operated by 37°N.</li>
       </ul>
 
-      <h2>9. Not a Medical Device or Medical Advice</h2>
+      <h2>8. Not a Medical Device or Medical Advice</h2>
       <p>Health Data by 37°N is an informational and diagnostic utility designed to help you inspect and export records from your device&rsquo;s health repositories. It is <strong>not a medical device</strong>, does not provide medical diagnosis, treatment, or clinical advice, and should never be used as a substitute for professional healthcare guidance.</p>
 
-      <h2>10. Children&rsquo;s Privacy</h2>
+      <h2>9. Children&rsquo;s Privacy</h2>
       <p>Health Data by 37°N is not directed to children under 16 years of age, and we do not knowingly collect personal information from children.</p>
 
-      <h2>11. Earlier Test Versions</h2>
+      <h2>10. Earlier Test Versions</h2>
       <p>Early pre-release test builds of the app (prior to version 0.13.0) included an experimental Google sign-in mechanism that saved account identity tokens locally in device secure storage. Current versions of Health Data automatically and permanently delete any legacy account session data upon launch or update without reading, using, or transmitting it.</p>
+      <p>Versions up to 0.14 offered optional background monitoring and a local check history. Updating to the current version cancels any scheduled checks and deletes that history from your phone.</p>
 
-      <h2>12. Changes to This Policy</h2>
+      <h2>11. Changes to This Policy</h2>
       <p>We may update this Privacy Policy from time to time. If revisions are made, we will update the &ldquo;Last updated&rdquo; date at the top of this page. Because the app does not collect user contact information, we encourage users to review this page periodically.</p>
 
-      <h2>13. Contact Us</h2>
+      <h2>12. Contact Us</h2>
       <p>If you have any questions or requests regarding this Privacy Policy or Health Data by 37°N, please contact:</p>
       <p>
         <strong>Pranam Lipinski</strong><br />
         37°N Labs<br />
-        Email: <a href="mailto:pranam@37degreesn.com">pranam@37degreesn.com</a><br />
+        Email: <a href="mailto:feedback+healthdata@37degreesn.com">feedback+healthdata@37degreesn.com</a><br />
         General privacy inquiries: <a href="mailto:privacy@37degreesn.com">privacy@37degreesn.com</a>
       </p>
     </div>
