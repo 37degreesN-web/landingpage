@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NOD Support — 37°N Labs</title>
+  <meta name="description" content="Support for NOD by 37°N: account access, sleep records, experiments, privacy, and account deletion." />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="assets/colors_and_type.css" rel="stylesheet" />
+  <link href="site.css" rel="stylesheet" />
+  <style>
+    /* ── Legal page layout ─────────────────────────────────── */
+    .legal-hero {
+      padding: 48px 0 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .legal-hero h1 {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: clamp(34px, 5vw, 54px);
+      line-height: 1.08;
+      letter-spacing: -0.03em;
+      margin: 0 0 12px;
+      color: var(--ink);
+    }
+
+    .legal-meta {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: var(--mute);
+      padding-bottom: 48px;
+    }
+
+    .legal-body {
+      max-width: 720px;
+      padding: 64px 0 120px;
+    }
+
+    .legal-body h2 {
+      font-family: var(--font-display);
+      font-weight: 500;
+      font-size: clamp(20px, 2.5vw, 26px);
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin: 48px 0 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+
+    .legal-body h2:first-of-type {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+
+    .legal-body h3 {
+      font-family: var(--font-sans);
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 24px 0 8px;
+    }
+
+    .legal-body p {
+      font-family: var(--font-sans);
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--sub);
+      margin: 0 0 16px;
+    }
+
+    .legal-body ul {
+      margin: 0 0 16px 20px;
+      padding: 0;
+    }
+
+    .legal-body li {
+      font-family: var(--font-sans);
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--sub);
+      margin-bottom: 6px;
+    }
+
+    .legal-body strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    .legal-body a {
+      color: var(--sage);
+      transition: color 0.15s;
+    }
+
+    .legal-body a:hover {
+      color: var(--ink);
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      color: var(--sage);
+      margin-bottom: 32px;
+      transition: color 0.15s;
+    }
+
+    .back-link:hover {
+      color: var(--ink);
+    }
+
+    .policy-callout {
+      background: var(--surface-solid);
+      border: 1px solid var(--line);
+      border-left: 3px solid var(--sage);
+      border-radius: var(--r);
+      padding: 16px 20px;
+      margin: 0 0 28px;
+    }
+
+    .policy-callout p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--sub);
+    }
+
+    .policy-callout a {
+      color: var(--sage);
+      font-weight: 600;
+    }
+
+    .toc-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 36px;
+    }
+
+    .toc-pill {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 6px 12px;
+      border: 1px solid var(--line-strong);
+      border-radius: var(--r-full);
+      color: var(--sub);
+      background: var(--surface-solid);
+      transition: all 0.15s ease;
+      text-decoration: none;
+    }
+
+    .toc-pill:hover {
+      border-color: var(--sage);
+      color: var(--ink);
+      background: var(--sage-06);
+    }
+
+    .app-badge {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      background: var(--sage-12);
+      color: var(--sage);
+      padding: 2px 8px;
+      border-radius: var(--r);
+      vertical-align: middle;
+      margin-left: 8px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ═══ NAV ═══ -->
+  <nav class="nav">
+    <div class="wrap nav-inner">
+      <a href="index.html" class="brand">37<span style="color: var(--warning)">&deg;</span>N&nbsp;Labs</a>
+      <div class="nav-links">
+        <a href="index.html#mission" class="mono nav-link-text">Mission</a>
+        <a href="index.html#science" class="mono nav-link-text">The Science</a>
+        <a href="index.html#team" class="mono nav-link-text">Team</a>
+        <a href="index.html#experiments" class="mono nav-link-text">Experiments</a>
+        <a href="index.html#join" class="btn btn-ink btn-sm">Join early access</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="legal-hero"><div class="wrap"><a href="index.html" class="back-link">&larr; Back to Home</a><h1>NOD Support</h1><div class="legal-meta">NOD by 37°N &mdash; Sleep, habits and personal experiments</div></div></header>
+  <main class="legal-body"><div class="wrap">
+    <h2>Get help</h2><p>Email <a href="mailto:support@37degreesn.com">support@37degreesn.com</a> or open <strong>Feedback &amp; Support</strong> in NOD. Include your app version, phone model, and a description of the problem. Please do not send passwords or health records.</p>
+    <h2>Sign-in and access</h2><p>Use the same sign-in method and account you used before to restore your history. NOD currently uses invitation-based access for new accounts. Contact support if you need help with your invitation.</p>
+    <h2>Health records and sync</h2><p>NOD can read sleep, heart rate, resting heart rate and HRV from Apple Health or Health Connect with your permission. It does not write to either health store. Available records depend on your wearable, its companion app, and your chosen permissions. Check that records appear in Apple Health or Health Connect, then use NOD's Vitals screen to sync again.</p>
+    <h2>Backup and recovery</h2><p>Open Account &rarr; Backup &amp; recovery to check the status of your account-backed encryption keys. Sign in to the same account after changing phones. A successful key backup does not confirm that every record has synced.</p>
+    <h2>Experiments and check-ins</h2><p>NOD helps you record observations and compare habits over time. Results depend on the data you provide and may be inconclusive. NOD is for personal tracking and learning, not diagnosis or treatment.</p>
+    <h2>Privacy and account deletion</h2><p>Read the <a href="privacy-policy.html#nod">NOD privacy policy</a>. To delete your shared 37°N account and associated data, use Account &rarr; Delete Account &amp; All Data in the app or follow the <a href="delete-account.html">web deletion instructions</a>. Account deletion affects your connected 37°N apps.</p>
+  </div></main>
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <div class="brand">37<span style="color: var(--warning)">&deg;</span>N&nbsp;Labs</div>
+          <div class="footer-tag">End generic health</div>
+          <div class="footer-legal">
+            <a href="terms-of-service.html">Terms of Service</a>
+            <span class="footer-legal-sep">·</span>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <span class="footer-legal-sep">·</span>
+            <a href="health-data-privacy.html">Health Data Privacy</a>
+            <span class="footer-legal-sep">·</span>
+            <a href="delete-account.html">Delete Account</a>
+          </div>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <span class="mono">Connect</span>
+            <a href="index.html#join">Early access</a>
+            <a href="mailto:pree@37degreesN.com">Investors</a>
+            <a href="https://www.linkedin.com/company/37degreesn/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span class="mono">&copy; 2026 37&deg; North &mdash; home of the unconventional</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

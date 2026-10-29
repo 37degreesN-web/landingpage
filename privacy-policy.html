@@ -210,7 +210,7 @@
     <div class="wrap">
       <a href="index.html" class="back-link">&larr; Back to Home</a>
       <h1>Privacy Policy</h1>
-      <div class="legal-meta">37°N Accounts, NOD, Squad Hub &amp; Protocol Explorer &mdash; Last updated: October 14, 2026</div>
+      <div class="legal-meta">37°N Accounts, NOD, Squad Hub &amp; Protocol Explorer &mdash; Last updated: October 29, 2026</div>
     </div>
   </header>
 
@@ -241,7 +241,7 @@
       <p>A single 37°N account works seamlessly across our connected applications: NOD, Squad Hub, and Protocol Explorer. When you create or sign in to an account, the following policies apply:</p>
 
       <h3>Sign-In &amp; Authentication</h3>
-      <p>You can sign in using your email and password or Google Sign-In, authenticated through <strong>Google Firebase Authentication</strong>. We never store raw passwords on our servers.</p>
+      <p>You can sign in using your email and password or Google Sign-In. NOD on iOS also offers Sign in with Apple. These methods are authenticated through <strong>Google Firebase Authentication</strong>. We never store raw passwords on our servers.</p>
 
       <h3>User Profile Information</h3>
       <p>Your profile data is stored on 37°N cloud servers hosted on Google Cloud (Firestore / Cloud SQL in the United States). Your profile can include:</p>
@@ -258,7 +258,7 @@
       <p>NOD explicitly disables the collection of the Android Advertising ID (<code>AD_ID</code>). Across all 37°N apps, <strong>we do not show advertisements, we do not use third-party data brokers, and we never sell, rent, or trade your personal or health data to anyone</strong>.</p>
 
       <h3>Push Notifications</h3>
-      <p>If you grant notification permission, we store your device push token via <strong>Firebase Cloud Messaging</strong> so our servers can send timely reminders, streak alerts, and squad updates. In addition, NOD schedules local reminders directly on your phone.</p>
+      <p>If you grant notification permission, we store your device push token via <strong>Firebase Cloud Messaging</strong> so our servers can send timely reminders, streak alerts, and squad updates. NOD no longer schedules local reminders or requests notification permission.</p>
 
       <h3>Feedback and Support Correspondence</h3>
       <p>When you send feedback or support inquiries from within the apps, your message and chosen category are transmitted to 37°N servers along with your account identifier. Support correspondence is reviewed exclusively by authorized 37°N engineering and support personnel to diagnose technical issues and assist you. Support inquiries are retained for up to 12 months for quality assurance, after which they are deleted.</p>
@@ -279,12 +279,12 @@
       <p>With your explicit operating system permission, NOD reads the following categories from <strong>Apple Health</strong> (iPhone) or <strong>Health Connect</strong> (Android):</p>
       <ul>
         <li><strong>Sleep telemetry:</strong> time in bed, asleep duration, awake periods, sleep sessions, and sleep stages (light, deep, REM).</li>
-        <li><strong>Heart metrics:</strong> heart rate and resting heart rate.</li>
+        <li><strong>Heart metrics:</strong> heart rate, resting heart rate, and heart rate variability (HRV), where supported by your health-data source.</li>
       </ul>
       <p><strong>Strictly Read-Only:</strong> NOD never writes to, modifies, or deletes records in Apple Health or Health Connect.</p>
 
       <h3>Background Health Sync</h3>
-      <p>With your permission, NOD performs background reads so your morning sleep scores, nightly metrics, and check-in prompts are updated as soon as you wake up.</p>
+      <p>With your permission, NOD can read available health records in the background and read historical records to update your sleep metrics. Background updates depend on your device, permissions, and operating system; you can also sync from the app.</p>
 
       <h3>Encrypted Cloud Sync</h3>
       <p>Your sleep records, daily check-ins, reflection notes, and experiment data (protocol runs, nightly yes/no answers, and custom experiment templates) are <strong>encrypted locally on your phone before they are uploaded</strong> to cloud storage (Firestore).</p>
