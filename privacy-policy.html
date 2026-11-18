@@ -5,15 +5,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — 37°N Labs</title>
-  <meta name="description" content="Privacy Policy for 37°N Accounts and applications: NOD (Nightly Open Data), Squad Hub, and Protocol Explorer." />
+  <meta name="description"
+    content="Privacy Policy for 37°N Accounts and applications: NOD (Nightly Open Data), Squad Hub, and Protocol Explorer." />
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
   <link href="assets/colors_and_type.css" rel="stylesheet" />
   <link href="site.css" rel="stylesheet" />
@@ -45,6 +45,7 @@
 
     .legal-body {
       max-width: 720px;
+      margin: 0 auto;
       padding: 64px 0 120px;
     }
 
@@ -220,7 +221,9 @@
 
       <!-- Callout: Health Data (on-device app) has separate policy -->
       <div class="policy-callout" id="health-data">
-        <p><strong>Looking for Health Data by 37°N?</strong> Health Data operates strictly on your phone with no user accounts, no cloud servers, and no tracking. Read its standalone policy here: <a href="health-data-privacy.html">Health Data by 37°N Privacy Policy</a>.</p>
+        <p><strong>Looking for Health Data by 37°N?</strong> Health Data operates strictly on your phone with no user
+          accounts, no cloud servers, and no tracking. Read its standalone policy here: <a
+            href="health-data-privacy.html">Health Data by 37°N Privacy Policy</a>.</p>
       </div>
 
       <!-- Quick Navigation Pills -->
@@ -232,41 +235,61 @@
         <a href="#account-deletion" class="toc-pill">Account Deletion</a>
       </div>
 
-      <p>This Privacy Policy explains how 37°N (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) collects, protects, uses, and handles data when you use a 37°N account and our connected applications: <strong>NOD (Nightly Open Data)</strong>, <strong>Squad Hub</strong>, and <strong>Protocol Explorer</strong> (collectively, the &ldquo;Services&rdquo;). We treat health records and personal information with utmost care and transparency.</p>
+      <p>This Privacy Policy explains how 37°N (&ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) collects,
+        protects, uses, and handles data when you use a 37°N account and our connected applications: <strong>NOD
+          (Nightly Open Data)</strong>, <strong>Squad Hub</strong>, and <strong>Protocol Explorer</strong>
+        (collectively, the &ldquo;Services&rdquo;). We treat health records and personal information with utmost care
+        and transparency.</p>
 
       <!-- ══════════════════════════════════════════════════════════ -->
       <!-- SECTION 1: SHARED 37°N ACCOUNT                           -->
       <!-- ══════════════════════════════════════════════════════════ -->
       <h2 id="shared-account">1. Shared 37°N Account (All Connected Apps)</h2>
-      <p>A single 37°N account works seamlessly across our connected applications: NOD, Squad Hub, and Protocol Explorer. When you create or sign in to an account, the following policies apply:</p>
+      <p>A single 37°N account works seamlessly across our connected applications: NOD, Squad Hub, and Protocol
+        Explorer. When you create or sign in to an account, the following policies apply:</p>
 
       <h3>Sign-In &amp; Authentication</h3>
       <p>You can sign in using your email and password or Google Sign-In. NOD on iOS also offers Sign in with Apple. These methods are authenticated through <strong>Google Firebase Authentication</strong>. We never store raw passwords on our servers.</p>
 
       <h3>User Profile Information</h3>
-      <p>Your profile data is stored on 37°N cloud servers hosted on Google Cloud (Firestore / Cloud SQL in the United States). Your profile can include:</p>
+      <p>Your profile data is stored on 37°N cloud servers hosted on Google Cloud (Firestore / Cloud SQL in the United
+        States). Your profile can include:</p>
       <ul>
         <li><strong>Account identifiers:</strong> display name and registered email address.</li>
         <li><strong>Preferences:</strong> preferred units of measurement (e.g., metric vs. imperial weight units).</li>
-        <li><strong>Demographics:</strong> age, sex at birth, racial background, and other self-reported demographic information you choose to enter.</li>
-        <li><strong>Personal goals &amp; wellness history:</strong> user-entered health goals, medications, or health conditions that you voluntarily record to personalize your experience.</li>
+        <li><strong>Demographics:</strong> age, sex at birth, racial background, and other self-reported demographic
+          information you choose to enter.</li>
+        <li><strong>Personal goals &amp; wellness history:</strong> user-entered health goals, medications, or health
+          conditions that you voluntarily record to personalize your experience.</li>
       </ul>
-      <p><strong>Profile Security at Rest:</strong> Profile data is encrypted at rest using industry-standard AES-256 encryption provided by Google Cloud and is protected by Firebase Security Rules and identity-based access controls. <em>Note: Profile information is not end-to-end encrypted</em>, as our backend cloud functions must process it to verify permissions, deliver squad rosters, and manage account services.</p>
+      <p><strong>Profile Security at Rest:</strong> Profile data is encrypted at rest using industry-standard AES-256
+        encryption provided by Google Cloud and is protected by Firebase Security Rules and identity-based access
+        controls. <em>Note: Profile information is not end-to-end encrypted</em>, as our backend cloud functions must
+        process it to verify permissions, deliver squad rosters, and manage account services.</p>
 
       <h3>Analytics: No Ads, No Selling of Data</h3>
-      <p>We use <strong>Firebase Analytics</strong> to understand aggregated feature usage and app health. Analytics tracks events such as screens viewed, sign-in attempts, search terms queried, protocols joined, squad actions, and app opens. Analytics <strong>never records raw health measurements</strong>.</p>
-      <p>NOD explicitly disables the collection of the Android Advertising ID (<code>AD_ID</code>). Across all 37°N apps, <strong>we do not show advertisements, we do not use third-party data brokers, and we never sell, rent, or trade your personal or health data to anyone</strong>.</p>
+      <p>We use <strong>Firebase Analytics</strong> to understand aggregated feature usage and app health. Analytics
+        tracks events such as screens viewed, sign-in attempts, search terms queried, protocols joined, squad actions,
+        and app opens. Analytics <strong>never records raw health measurements</strong>.</p>
+      <p>NOD explicitly disables the collection of the Android Advertising ID (<code>AD_ID</code>). Across all 37°N
+        apps, <strong>we do not show advertisements, we do not use third-party data brokers, and we never sell, rent, or
+          trade your personal or health data to anyone</strong>.</p>
 
       <h3>Push Notifications</h3>
       <p>If you grant notification permission, we store your device push token via <strong>Firebase Cloud Messaging</strong> so our servers can send timely reminders, streak alerts, and squad updates. NOD no longer schedules local reminders or requests notification permission.</p>
 
       <h3>Feedback and Support Correspondence</h3>
-      <p>When you send feedback or support inquiries from within the apps, your message and chosen category are transmitted to 37°N servers along with your account identifier. Support correspondence is reviewed exclusively by authorized 37°N engineering and support personnel to diagnose technical issues and assist you. Support inquiries are retained for up to 12 months for quality assurance, after which they are deleted.</p>
+      <p>When you send feedback or support inquiries from within the apps, your message and chosen category are
+        transmitted to 37°N servers along with your account identifier. Support correspondence is reviewed exclusively
+        by authorized 37°N engineering and support personnel to diagnose technical issues and assist you. Support
+        inquiries are retained for up to 12 months for quality assurance, after which they are deleted.</p>
 
       <h3>Third-Party Service Processors</h3>
-      <p>We rely on vetted infrastructure providers to deliver our cloud services under strict confidentiality and security terms:</p>
+      <p>We rely on vetted infrastructure providers to deliver our cloud services under strict confidentiality and
+        security terms:</p>
       <ul>
-        <li><strong>Google Cloud &amp; Firebase (United States):</strong> Firebase Authentication, Cloud Firestore, Cloud Functions, Cloud SQL, Firebase Analytics, and Firebase Cloud Messaging.</li>
+        <li><strong>Google Cloud &amp; Firebase (United States):</strong> Firebase Authentication, Cloud Firestore,
+          Cloud Functions, Cloud SQL, Firebase Analytics, and Firebase Cloud Messaging.</li>
       </ul>
 
       <!-- ══════════════════════════════════════════════════════════ -->
@@ -276,30 +299,44 @@
       <p>NOD is our personal sleep optimization and N-of-1 self-experimentation application for iOS and Android.</p>
 
       <h3>Health Data Read</h3>
-      <p>With your explicit operating system permission, NOD reads the following categories from <strong>Apple Health</strong> (iPhone) or <strong>Health Connect</strong> (Android):</p>
+      <p>With your explicit operating system permission, NOD reads the following categories from <strong>Apple
+          Health</strong> (iPhone) or <strong>Health Connect</strong> (Android):</p>
       <ul>
         <li><strong>Sleep telemetry:</strong> time in bed, asleep duration, awake periods, sleep sessions, and sleep stages (light, deep, REM).</li>
         <li><strong>Heart metrics:</strong> heart rate, resting heart rate, and heart rate variability (HRV), where supported by your health-data source.</li>
       </ul>
-      <p><strong>Strictly Read-Only:</strong> NOD never writes to, modifies, or deletes records in Apple Health or Health Connect.</p>
+      <p><strong>Strictly Read-Only:</strong> NOD never writes to, modifies, or deletes records in Apple Health or
+        Health Connect.</p>
 
       <h3>Background Health Sync</h3>
       <p>With your permission, NOD can read available health records in the background and read historical records to update your sleep metrics. Background updates depend on your device, permissions, and operating system; you can also sync from the app.</p>
 
       <h3>Encrypted Cloud Sync</h3>
-      <p>Your sleep records, daily check-ins, reflection notes, and experiment data (protocol runs, nightly yes/no answers, and custom experiment templates) are <strong>encrypted locally on your phone before they are uploaded</strong> to cloud storage (Firestore).</p>
+      <p>Your sleep records, daily check-ins, reflection notes, and experiment data (protocol runs, nightly yes/no
+        answers, and custom experiment templates) are <strong>encrypted locally on your phone before they are
+          uploaded</strong> to cloud storage (Firestore).</p>
 
       <h3>Key Management &amp; Account Recovery</h3>
-      <p>To ensure you do not permanently lose your historical sleep data if you replace, damage, or upgrade your phone, encryption keys are backed up to your account. 37°N&rsquo;s recovery service can unlock and restore these keys for your verified, authenticated account upon sign-in. Because keys are recoverable through your account, we do not claim that 37°N could never mathematically decrypt this data or that it is end-to-end encrypted beyond recovery; rather, your records are encrypted on-device before transmission, and keys are isolated and released exclusively to your authenticated account.</p>
+      <p>To ensure you do not permanently lose your historical sleep data if you replace, damage, or upgrade your phone,
+        encryption keys are backed up to your account. 37°N&rsquo;s recovery service can unlock and restore these keys
+        for your verified, authenticated account upon sign-in. Because keys are recoverable through your account, we do
+        not claim that 37°N could never mathematically decrypt this data or that it is end-to-end encrypted beyond
+        recovery; rather, your records are encrypted on-device before transmission, and keys are isolated and released
+        exclusively to your authenticated account.</p>
 
       <h3>Onboarding Answers and Sleep Goals</h3>
-      <p>Your responses to initial onboarding questions and your target sleep duration are saved to your account profile to calculate your personalized 37° Sleep Score.</p>
+      <p>Your responses to initial onboarding questions and your target sleep duration are saved to your account profile
+        to calculate your personalized 37° Sleep Score.</p>
 
       <h3>Optional Degradation Studies</h3>
-      <p>NOD may offer optional scientific studies (such as measuring the impact of specific late-night habits on deep sleep). Participating in or leaving a study is recorded on our servers along with the consent version for compliance auditing. Study data is used solely to evaluate habit outcomes within your encrypted experiment runs. You can withdraw consent and leave a study at any time.</p>
+      <p>NOD may offer optional scientific studies (such as measuring the impact of specific late-night habits on deep
+        sleep). Participating in or leaving a study is recorded on our servers along with the consent version for
+        compliance auditing. Study data is used solely to evaluate habit outcomes within your encrypted experiment runs.
+        You can withdraw consent and leave a study at any time.</p>
 
       <h3>Squads in NOD</h3>
-      <p>Social accountability and peer sharing within NOD are powered by our Squads framework and are governed by the <a href="#squad-hub">Squad Hub</a> section below.</p>
+      <p>Social accountability and peer sharing within NOD are powered by our Squads framework and are governed by the
+        <a href="#squad-hub">Squad Hub</a> section below.</p>
 
       <!-- ══════════════════════════════════════════════════════════ -->
       <!-- SECTION 3: SQUAD HUB                                      -->
@@ -308,18 +345,28 @@
       <p>Squad Hub powers peer accountability, shared streaks, and protocol compliance across our ecosystem.</p>
 
       <h3>Squad Membership Data</h3>
-      <p>Squad names, membership rosters, invite links, roles (Captain or Member), and streak milestones are stored on 37°N servers. To safeguard personal privacy, <strong>members can choose a pseudonym</strong> instead of displaying their real name or email to squad peers.</p>
+      <p>Squad names, membership rosters, invite links, roles (Captain or Member), and streak milestones are stored on
+        37°N servers. To safeguard personal privacy, <strong>members can choose a pseudonym</strong> instead of
+        displaying their real name or email to squad peers.</p>
 
       <h3>Shared Health &amp; Sleep Summaries</h3>
-      <p>When you join a squad and explicitly agree to share progress, your daily sleep scores, recovery vitals, and check-ins are <strong>encrypted separately for each member of that squad</strong>. Only active members of your squad hold the keys to decrypt and view your shared summaries. Sharing begins only after you join and agree; leaving a squad immediately revokes future data sharing.</p>
-      <p><strong>Key Recovery Caveat:</strong> As with individual records, squad encryption keys can be recovered through verified account authentication; we do not claim that the server is incapable of decryption.</p>
+      <p>When you join a squad and explicitly agree to share progress, your daily sleep scores, recovery vitals, and
+        check-ins are <strong>encrypted separately for each member of that squad</strong>. Only active members of your
+        squad hold the keys to decrypt and view your shared summaries. Sharing begins only after you join and agree;
+        leaving a squad immediately revokes future data sharing.</p>
+      <p><strong>Key Recovery Caveat:</strong> As with individual records, squad encryption keys can be recovered
+        through verified account authentication; we do not claim that the server is incapable of decryption.</p>
 
       <h3>What Other Squad Members See</h3>
       <p>Members of a squad you join can see:</p>
       <ul>
-        <li>Your display name or chosen pseudonym, avatar/profile image (if uploaded), role (Captain or Member), and active consistency streak.</li>
-        <li>Your recent activity status (e.g., &ldquo;Active 10m ago&rdquo;) and daily check-in completion status (morning, afternoon, or evening check-in completed).</li>
-        <li>Shared sleep and recovery metrics (when shared): 37° Sleep Score, total sleep time, sleep efficiency, quality and alertness ratings, bedtime and wake-up times, sleep stage breakdown (deep, REM, light), and morning reflection notes.</li>
+        <li>Your display name or chosen pseudonym, avatar/profile image (if uploaded), role (Captain or Member), and
+          active consistency streak.</li>
+        <li>Your recent activity status (e.g., &ldquo;Active 10m ago&rdquo;) and daily check-in completion status
+          (morning, afternoon, or evening check-in completed).</li>
+        <li>Shared sleep and recovery metrics (when shared): 37° Sleep Score, total sleep time, sleep efficiency,
+          quality and alertness ratings, bedtime and wake-up times, sleep stage breakdown (deep, REM, light), and
+          morning reflection notes.</li>
         <li>Social reactions and nudges: fist-bumps, kudos, and Captain boosts.</li>
       </ul>
 
@@ -327,20 +374,26 @@
       <!-- SECTION 4: PROTOCOL EXPLORER                              -->
       <!-- ══════════════════════════════════════════════════════════ -->
       <h2 id="protocol-explorer">4. Protocol Explorer <span class="app-badge">Science &amp; Search</span></h2>
-      <p>Protocol Explorer enables users to discover, search, and evaluate evidence-based health and wellness protocols.</p>
+      <p>Protocol Explorer enables users to discover, search, and evaluate evidence-based health and wellness protocols.
+      </p>
 
       <h3>What is Stored</h3>
-      <p>Protocol Explorer requires a 37°N sign-in. When you search for or view protocols, search keywords, filters, viewed protocols, and bookmarked protocols are sent to 37°N servers to deliver search results and improve protocol rankings, and may appear in aggregated analytics.</p>
-      <p><strong>Zero Health Repository Access:</strong> Protocol Explorer does <strong>not</strong> request, access, or read any records from Apple Health or Health Connect.</p>
+      <p>Protocol Explorer requires a 37°N sign-in. When you search for or view protocols, search keywords, filters,
+        viewed protocols, and bookmarked protocols are sent to 37°N servers to deliver search results and improve
+        protocol rankings, and may appear in aggregated analytics.</p>
+      <p><strong>Zero Health Repository Access:</strong> Protocol Explorer does <strong>not</strong> request, access, or
+        read any records from Apple Health or Health Connect.</p>
 
       <h3>Protocol Sharing</h3>
-      <p>Sharing a protocol uses your phone&rsquo;s native operating system share sheet. You choose the destination application or recipient; 37°N does not monitor or control where links are shared.</p>
+      <p>Sharing a protocol uses your phone&rsquo;s native operating system share sheet. You choose the destination
+        application or recipient; 37°N does not monitor or control where links are shared.</p>
 
       <!-- ══════════════════════════════════════════════════════════ -->
       <!-- SECTION 5: ACCOUNT DELETION & DATA RETENTION              -->
       <!-- ══════════════════════════════════════════════════════════ -->
       <h2 id="account-deletion">5. Deleting Your Account and Data</h2>
-      <p>You have the absolute right to delete your 37°N account and all associated records at any time. When an account deletion is executed, we permanently delete:</p>
+      <p>You have the absolute right to delete your 37°N account and all associated records at any time. When an account
+        deletion is executed, we permanently delete:</p>
       <ul>
         <li>Your authentication credentials and registered email.</li>
         <li>Your user profile, demographics, and health preferences.</li>
@@ -348,51 +401,68 @@
         <li>All encrypted sleep records, check-ins, vitals history, and key backups stored on our cloud servers.</li>
         <li>All device push notification tokens.</li>
       </ul>
-      <p><strong>How to Request Deletion:</strong> You can initiate permanent account and data deletion at any time through our public web deletion portal at <a href="delete-account.html"><strong>delete-account.html</strong></a> or by emailing <a href="mailto:privacy@37degreesn.com?subject=Account%20and%20Data%20Deletion%20Request"><strong>privacy@37degreesn.com</strong></a> with the subject line &ldquo;Account and Data Deletion Request.&rdquo;</p>
-      <p><strong>Timeframe:</strong> All account deletion requests are completed within <strong>30 calendar days</strong>. Once deleted, your account and historical records cannot be restored.</p>
+      <p><strong>How to Request Deletion:</strong> You can initiate permanent account and data deletion at any time
+        through our public web deletion portal at <a href="delete-account.html"><strong>delete-account.html</strong></a>
+        or by emailing <a
+          href="mailto:support@37degreesn.com?subject=Account%20and%20Data%20Deletion%20Request"><strong>support@37degreesn.com</strong></a>
+        with the subject line &ldquo;Account and Data Deletion Request.&rdquo;</p>
+      <p><strong>Timeframe:</strong> All account deletion requests are completed within <strong>30 calendar
+          days</strong>. Once deleted, your account and historical records cannot be restored.</p>
 
       <!-- ══════════════════════════════════════════════════════════ -->
       <!-- SECTION 6: USER RIGHTS & CHOICES                          -->
       <!-- ══════════════════════════════════════════════════════════ -->
       <h2>6. Your Rights and Choices</h2>
-      <p>Depending on your jurisdiction (including under the EU/UK GDPR, California Consumer Privacy Act CCPA/CPRA, and Washington My Health My Data Act), you have the right to:</p>
+      <p>Depending on your jurisdiction (including under the EU/UK GDPR, California Consumer Privacy Act CCPA/CPRA, and
+        Washington My Health My Data Act), you have the right to:</p>
       <ul>
-        <li><strong>Access &amp; Export:</strong> Request a copy of your account information and export your data in a portable format.</li>
-        <li><strong>Correction:</strong> Update or correct inaccurate profile details directly in your account settings.</li>
+        <li><strong>Access &amp; Export:</strong> Request a copy of your account information and export your data in a
+          portable format.</li>
+        <li><strong>Correction:</strong> Update or correct inaccurate profile details directly in your account settings.
+        </li>
         <li><strong>Deletion:</strong> Permanently delete your account and all stored cloud data.</li>
-        <li><strong>Revoke Permissions:</strong> Revoke Apple Health or Health Connect permissions at any time via your device&rsquo;s system settings. Revoking access stops all subsequent reads.</li>
+        <li><strong>Revoke Permissions:</strong> Revoke Apple Health or Health Connect permissions at any time via your
+          device&rsquo;s system settings. Revoking access stops all subsequent reads.</li>
         <li><strong>Withdraw Consent:</strong> Leave any squad or optional degradation study at any time.</li>
       </ul>
-      <p>To exercise any of these privacy rights, contact us at <a href="mailto:privacy@37degreesn.com">privacy@37degreesn.com</a>.</p>
+      <p>To exercise any of these privacy rights, contact us at <a
+          href="mailto:support@37degreesn.com">support@37degreesn.com</a>.</p>
 
       <!-- ══════════════════════════════════════════════════════════ -->
       <!-- SECTION 7: NOT MEDICAL ADVICE                            -->
       <!-- ══════════════════════════════════════════════════════════ -->
       <h2>7. Not Medical Advice or a Medical Device</h2>
-      <p>None of our applications (NOD, Squad Hub, Protocol Explorer, or Health Data) are medical devices, and 37°N does not provide clinical diagnosis, medical treatment, or healthcare services. Content, sleep scores, and protocols are provided solely for personal informational and self-tracking purposes. Always consult a qualified physician or healthcare provider before altering your sleep habits, medication, supplement, or exercise routine.</p>
+      <p>None of our applications (NOD, Squad Hub, Protocol Explorer, or Health Data) are medical devices, and 37°N does
+        not provide clinical diagnosis, medical treatment, or healthcare services. Content, sleep scores, and protocols
+        are provided solely for personal informational and self-tracking purposes. Always consult a qualified physician
+        or healthcare provider before altering your sleep habits, medication, supplement, or exercise routine.</p>
 
       <!-- ══════════════════════════════════════════════════════════ -->
       <!-- SECTION 8: CHILDREN'S PRIVACY                             -->
       <!-- ══════════════════════════════════════════════════════════ -->
       <h2>8. Children&rsquo;s Privacy</h2>
-      <p>The Services are not directed to children under 16 years of age, and we do not knowingly collect personal information from children. If you believe that a child has provided us with personal information, please contact us immediately so we can delete it.</p>
+      <p>The Services are not directed to children under 16 years of age, and we do not knowingly collect personal
+        information from children. If you believe that a child has provided us with personal information, please contact
+        us immediately so we can delete it.</p>
 
       <!-- ══════════════════════════════════════════════════════════ -->
       <!-- SECTION 9: CHANGES TO THIS POLICY                         -->
       <!-- ══════════════════════════════════════════════════════════ -->
       <h2>9. Changes to This Privacy Policy</h2>
-      <p>We may update this Privacy Policy periodically to reflect app updates or regulatory changes. If we make material modifications, we will notify you through the app or by email before they take effect. The &ldquo;Last updated&rdquo; date at the top of this page indicates the effective date of the latest revision.</p>
+      <p>We may update this Privacy Policy periodically to reflect app updates or regulatory changes. If we make
+        material modifications, we will notify you through the app or by email before they take effect. The &ldquo;Last
+        updated&rdquo; date at the top of this page indicates the effective date of the latest revision.</p>
 
       <!-- ══════════════════════════════════════════════════════════ -->
       <!-- SECTION 10: CONTACT US                                    -->
       <!-- ══════════════════════════════════════════════════════════ -->
       <h2>10. Contact Us</h2>
-      <p>If you have any questions, requests, or privacy inquiries regarding your 37°N account or our applications, please contact:</p>
+      <p>If you have any questions, requests, or privacy inquiries regarding your 37°N account or our applications,
+        please contact:</p>
       <p>
-        <strong>Pranam Lipinski</strong><br />
+        <strong>Pranam Kolari</strong><br />
         37°N Labs<br />
-        Email: <a href="mailto:privacy@37degreesn.com">privacy@37degreesn.com</a><br />
-        Support: <a href="mailto:support@37degreesn.com">support@37degreesn.com</a>
+        Email: <a href="mailto:support@37degreesn.com">support@37degreesn.com</a>
       </p>
 
     </div>
@@ -419,13 +489,13 @@
           <div class="footer-col">
             <span class="mono">Connect</span>
             <a href="index.html#join">Early access</a>
-            <a href="mailto:pree@37degreesN.com">Investors</a>
+            <a href="mailto:support@37degreesn.com">Investors</a>
             <a href="https://www.linkedin.com/company/37degreesn/" target="_blank" rel="noopener">LinkedIn</a>
           </div>
         </div>
       </div>
       <div class="footer-base">
-        <span class="mono">&copy; 2026 37&deg; North &mdash; home of the unconventional</span>
+        <span class="mono">&copy; 2026 37&deg; North</span>
       </div>
     </div>
   </footer>
